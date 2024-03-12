@@ -213,3 +213,7 @@ const persons =
         }   
     }
 console.log(filteredAge)
+
+/* 10.  Objekto Savybių Keitimas: 
+Turite objektą, kuriame saugomi įvairių žmonių amžiai. Naudodami for in ciklą, padidinkite kiekvieno asmens amžių 1 metais.*/
+console.log("    10 UZDUOTIS");
