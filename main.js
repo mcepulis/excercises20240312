@@ -138,18 +138,13 @@ const translate =
     /* 7.     Didžiausias Skaičius: 
     Turite skaičių masyvą. Naudodami for ciklą, raskite didžiausią skaičių masyve.*/
     console.log("    7 UZDUOTIS");
-    const maxArr = [100, 500000, 200, 15000, 150];
+    const maxArr = [100, 500000, 200, 15000, 1500000];
     let max = 0;
     for (let i = 0; i < maxArr.length; i++) {
-        for (let j = 0; j < maxArr.length; j++) {
-            if (maxArr[i] > maxArr[j+1]) {
-                max = maxArr[i]
-               
-            }
-        }
-      
+     if (maxArr[i] > max) {
+         max = maxArr[i];
+     }
     }
-
     console.log(max);
 
     /* 8.     Objekto Savybių Skaičius: 
@@ -217,3 +212,18 @@ console.log(filteredAge)
 /* 10.  Objekto Savybių Keitimas: 
 Turite objektą, kuriame saugomi įvairių žmonių amžiai. Naudodami for in ciklą, padidinkite kiekvieno asmens amžių 1 metais.*/
 console.log("    10 UZDUOTIS");
+
+const personAge = 
+        {
+            ageJohn: "5",
+            ageMark: "19",
+            ageSteve: "25",
+            ageKeith: "50",
+            ageBruce: "14",
+        };
+
+        let agePlusOne = {};
+        for (let age in personAge) {
+            agePlusOne[age] = Number(personAge[age]) + 1
+        }
+    console.log(agePlusOne);
