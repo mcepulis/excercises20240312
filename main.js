@@ -227,3 +227,5 @@ const personAge =
             agePlusOne[age] = Number(personAge[age]) + 1
         }
     console.log(agePlusOne);
+
+

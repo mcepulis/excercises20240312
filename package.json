@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "main": "node --watch main.js",
+    "time": "node --watch timeToWords.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
