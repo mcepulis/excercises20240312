@@ -1,6 +1,6 @@
 
 
-    function printWords(hh, mm, ss) { 
+    function timeToWords(hh, mm, ss) { 
         let words = [
             "viena", "dvi", "trys", "keturios", "penkios", "šešios", "septynios", "aštuonios", "devynios", "dešimt", 
             "vienuolika", "dvylika", "trylika", "keturiolika", "penkiolika", "šešiolika", "septyniolika", "aštuoniolika", 
@@ -57,6 +57,6 @@
     let hh = currentTime.getHours();
     let mm = currentTime.getMinutes();
     let ss = currentTime.getSeconds();
-    printWords(hh, mm, ss);
+    timeToWords(hh, mm, ss);
 
  
