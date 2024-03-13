@@ -115,14 +115,14 @@ const translate =
         category: "kategorija",
     };
 
-    let keys = [];
-    let name = [];
-    for (type in translate) {
-        keys.push(type);
-        name.push(translate[type]);
+    let keyS = [];
+    let namE = [];
+    for (typ in translate) {
+        keyS.push(typ);
+        namE.push(translate[typ]);
     }
-    console.log(keys);
-    console.log(name);
+    console.log(keyS);
+    console.log(namE);
 
     /*6.     Masyvo Suma: 
     Turite masyvą, kuriame yra skaičiai. Naudodami for ciklą, apskaičiuokite masyvo skaičių sumą.*/
