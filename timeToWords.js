@@ -1,6 +1,11 @@
 
 
-    function timeToWords(hh, mm, ss) { 
+    function timeToWords() { 
+        let currentTime = new Date();
+        let hh = currentTime.getHours();
+        let mm = currentTime.getMinutes();
+        let ss = currentTime.getSeconds();
+
         let words = [
             "viena", "dvi", "trys", "keturios", "penkios", "šešios", "septynios", "aštuonios", "devynios", "dešimt", 
             "vienuolika", "dvylika", "trylika", "keturiolika", "penkiolika", "šešiolika", "septyniolika", "aštuoniolika", 
@@ -50,13 +55,10 @@
         }
 
 
-        console.log(words[hh - 1] + wordHour + " " + minutes + wordMinute + " ir " + seconds + wordSecond); 
+        return words[hh - 1] + wordHour + " " + minutes + wordMinute + " ir " + seconds + wordSecond; 
     } 
       
-    let currentTime = new Date();
-    let hh = currentTime.getHours();
-    let mm = currentTime.getMinutes();
-    let ss = currentTime.getSeconds();
-    timeToWords(hh, mm, ss);
+    
+    console.log(timeToWords());
 
  
