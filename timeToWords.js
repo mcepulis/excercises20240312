@@ -2,9 +2,9 @@
 
     function timeToWords() { 
         let currentTime = new Date();
-        let hh = currentTime.getHours();
-        let mm = currentTime.getMinutes();
-        let ss = currentTime.getSeconds();
+        let hh = 10;
+        let mm = 30;
+        let ss = 20;
 
         let words = [
             "viena", "dvi", "trys", "keturios", "penkios", "šešios", "septynios", "aštuonios", "devynios", "dešimt", 
@@ -37,9 +37,9 @@
             wordHour = " valandų";
         }
             
-        if (mm == 1 && mm == 21 && mm == 31 && mm == 41 && mm == 51) {
+        if (mm == 1 || mm == 21 || mm == 31 || mm == 41 || mm == 51) {
              wordMinute = " minutė";
-        } else if (mm >= 10 && mm <= 20) {
+        } else if (mm >= 10 && mm <= 20 || mm == 30 || mm == 40 || mm == 50)  {
             wordMinute = " minučių";
         } else {
              wordMinute = " minutės";
@@ -61,4 +61,6 @@
     
     console.log(timeToWords());
 
+
+    console.log(30%10 - 1)
  

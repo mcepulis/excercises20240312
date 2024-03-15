@@ -9,7 +9,9 @@ const book =
     };
 
 for (let i in book) {
+    console.log(i);
 console.log(book[i]);
+
 }
 
 /* 2.     Vartotojų Masyvas: 
@@ -138,11 +140,11 @@ const translate =
     /* 7.     Didžiausias Skaičius: 
     Turite skaičių masyvą. Naudodami for ciklą, raskite didžiausią skaičių masyve.*/
     console.log("    7 UZDUOTIS");
-    const maxArr = [100, 500000, 200, 15000, 1500000];
-    let max = 0;
+    const maxArr = [-100, -500000, -200, -15000, -1500000];
+    let max = -Infinity;
     for (let i = 0; i < maxArr.length; i++) {
      if (maxArr[i] > max) {
-         max = maxArr[i];
+         max = (maxArr[i]);
      }
     }
     console.log(max);
@@ -156,7 +158,7 @@ const translate =
         author: "autorius",
         year: "metai",
         price: "kaina",
-        category: "kategorija",
+       
        
     };
     function typesSum() {
